@@ -1,0 +1,164 @@
+<!--==================
+	MBLDS Dance Survey
+	==================-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+	<title>MBLDS Dance Survey</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1 id="title">MBLDS Dance Survey</h1>
+<div id="form-outer">
+  <p id="description">Please complete the survey below to determine the most popular Ballroom & Latin dance style</p>
+  <form id="survey-form">
+    <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name">
+          * Name:
+        </label>
+      </div>
+      <div class="rightTab">
+        <input id="name" class="input-field" name="name" type="text" placeholder="Enter your name" required>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="age">
+        * Age: 
+        </label>
+      </div>
+      <div class="rightTab">
+        <input id="number" class="input-field" name="age" type = "number" min="1" max="100" placeholder="Enter your age">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="email-label">
+          * Email: 
+        </label>
+      </div>
+      <div class="rightTab">
+        <input id="email" class="input-field" name="email" type="email" placeholder="Enter your email" required>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="currentPos">Which option best describes your current position? </label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" class="dropdown" name="dropdown">
+          <option disabled selected value>
+            Select an option
+          </option>
+          <option value="Student">
+            Student
+          </option>
+          <option value="Job">
+            Full Time Job
+          </option>
+          <option value="learner">
+            School Pupil
+          </option>
+          <option value="Other">
+            Other
+          </option>
+          <option value="preferNo">
+            Prefer not to say
+          </option>
+        </select>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="userRating">* Would you recommend MBLDS to a friend? </label>
+      </div>
+      <div class="rightTab">
+        <ul>
+          <li class="radio">
+            <label>Definitely
+              <input class="userRatings" name="radio-btns" type="radio" value="1" checked>
+            </label>
+          </li>
+          <li class="radio">
+            <label>Maybe
+              <input class="userRatings" name="radio-btns" type="radio" value="2">
+            </label>
+          </li>
+          <li class="radio">
+            <label>Not sure
+              <input class="userRatings" name="radio-btns" type="radio" value="3">
+            </label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class"rowTab">
+      <div class="labels">
+        <label for="most-like">What do you like most about MBLDS? </label>
+      </div>
+      <div class="rightTab">
+        <select id="most-like" class="dropdown" name="mostLike">
+          <option disabled selected value>Select an option</option>
+          <option value="classes">
+            Dance Classes
+          </option>
+          <option value="socials">
+            Socials
+          </option>
+          <option value="outreach">
+            Community Outreach
+          </option>
+          <option value="competitions">
+            Intervarsity Competition
+          </option>
+        </select>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="preferences">My favourite dance styles are<br>(Check all that apply):</label>
+      </div>
+      <div class="rightTab">
+        <ul id="prefer">
+          <li class="checkbox"><label><input class="userRatings" name="prefer" type="checkbox" value="1">Waltz</label>
+          </li>
+          <li class="checkbox"><label><input class="userRatings" name="prefer" type="checkbox" value="2">Tango</label>
+          </li>
+          <li class="checkbox"><label><input class="userRatings" name="prefer" type="checkbox" value="3">Viennese Waltz</label>
+          </li>
+          <li class="checkbox"><label><input class="userRatings" name="prefer" type="checkbox" value="4">Foxtrot</label>
+          </li>
+          <li class="checkbox"><label><input class="userRatings" name="prefer" type="checkbox" value="5">Quickstep</label>
+          </li>
+          <li class="checkbox"><label><input class="userRatings" name="prefer" type="checkbox" value="6">Cha Cha</label>
+          </li>
+          <li class="checkbox"><label><input class="userRatings" name="prefer" type="checkbox" value="7">Samba</label>
+          </li>
+          <li class="checkbox"><label><input class="userRatings" name="prefer" type="checkbox" value="8">Rumba</label>
+          </li>
+          <li class="checkbox"><label><input class="userRatings" name="prefer" type="checkbox" value="9">Paso Doble</label>
+          </li>
+          <li class="checkbox"><label><input class="userRatings" name="prefer" type="checkbox" value="10">Jive</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="comments">Any comments or suggestions? </label>
+      </div>
+      <div class="rightTab">
+        <textarea id="comments" class="input-field" name="comment" placeholder="Please leave us a comment..."></textarea>
+      </div>
+    </div>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</div>
+</body>
+</html>

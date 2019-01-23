@@ -1,0 +1,154 @@
+
+/* Font Embedding */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+/* General Styles */
+
+body {
+  background-color: #7F0037;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  text-align: center;
+}
+
+#title {
+  background-image: repeating-linear-gradient(
+    45deg, black, black 20px, transparent 20px, transparent 30px
+    );
+  border: 10px double;
+  box-shadow: 7px 7px 5px #3D001A;
+  color: #fff;
+  display: inline-block;
+  font-size: 3em;
+  margin: 20px;
+  padding: 5px 10px;
+  text-shadow: 3px 3px 5px #000;
+}
+
+#form-outer {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 7px 7px 5px #3D001A;
+  margin: 0 auto;
+  padding: 20px 0;
+  width: 85%;
+}
+
+#description {
+  margin: 10px 20px;
+}
+
+.labels {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px;
+  text-align: right;
+  vertical-align: top;
+  width: 40%;
+}
+
+.rightTab {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+  width: 48%;
+}
+
+.input-field {
+  border: 1px solid #7F0037;
+  border-radius: 3px;
+  height: 20px;
+  width: 280px;
+  margin: 10px;
+  padding: 5px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.userRatings,
+input[type="checkbox"] {
+  float: left;
+  margin-right: 5px;
+}
+
+#submit {
+  background-color: #7F0037;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px #000;
+  color: #fff;
+  font-size: 1em;
+  margin: 10px;
+  height: 40px;
+  width: 96px;
+}
+
+#submit:hover {
+  background-color: #AD205D;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.dropdown {
+  border: 1px solid #7F0037;
+  border-radius: 3px;
+  margin: 10px;
+  margin-top: 15px;
+  padding: 5px;
+  height: 35px;
+  width: 150px;
+}
+
+.radio, .checkbox {
+  display: block;
+  position: relative;
+  left: -43px;
+  margin-left: 10px;
+  padding-bottom: 7px;
+}
+
+#comments {
+  height: 50px;
+  resize: vertical;
+}
+
+/*========================================*/
+
+/* Media Queries */
+
+@media screen and (max-width: 833px) {
+
+  body {padding: 0 15px;}
+
+  #form-outer {
+    width: 100%;
+  }
+
+  .input-field {
+    width: 80%;
+  }
+  
+  select {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .labels {
+    margin-left: 15px;
+    width: 90%;
+    text-align: left;
+  }
+  
+  .rightTab {
+    float: left;
+    margin-left: 15px;
+    width: 80%;
+  }
+  
+  select, .input-field {
+    width: 100%;
+  }
+}
